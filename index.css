@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    margin: 0px auto 0px;
+    padding: 15px 15px;
+    text-align: center;
+    font-family: "Tahoma";
+    font-size: 40px;
+    background-color: #cccccc;
+}
+
+footer{
+    margin: 10px auto 0px;
+    padding: 15px 15px;
+    text-align: center;
+    color:#444444;
+    background-color: #cccccc;
+}
+
+body {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+div.container{
+    padding: 10px 0px;
+}
+
+div ul li{
+    font-size: 20px;
+}
+
+#img_area{
+    width: 500;
+    height: 300px;
+}
+
+img.slider{
+    width:300px;
+    height:100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#carousel-example-generic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: auto;
+
+}
