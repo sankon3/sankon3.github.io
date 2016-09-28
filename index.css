@@ -35,16 +35,20 @@ body {
     100% {opacity: 1}
 }
 
-div.container{
-    padding: 10px 0px;
+#about, #work, #contact{
+margin:20px;
 }
 
 div ul li{
-    font-size: 20px;
+    font-size: 15px;
+}
+
+p#github_user_page{
+    font-size: 15px;
 }
 
 #img_area{
-    width: 500;
+    width: 500px;
     height: 300px;
 }
 
@@ -62,5 +66,4 @@ img.slider{
     margin-right: auto;
     width: auto;
     height: auto;
-
 }
