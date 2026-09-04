@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>プライバシーポリシー｜タクシーメーター　プラス（Android）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.7;
+      padding: 24px;
+      max-width: 900px;
+      margin: auto;
+      color: #222;
+    }
+    h1, h2 {
+      margin-top: 1.8em;
+    }
+    h1:first-of-type {
+      margin-top: 0;
+    }
+    hr {
+      margin: 3em 0;
+    }
+    a {
+      word-break: break-all;
+    }
+    .note {
+      padding: 12px 14px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fafafa;
+    }
+    code {
+      font-size: 0.95em;
+      word-break: break-all;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em 0;
+      font-size: 0.95em;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+
+<h1>プライバシーポリシー</h1>
+
+<p class="note">
+  山根 孝平（CreamWorks）（以下「開発者」）は、Google Play で提供する Android アプリ
+  「<strong>タクシーメーター　プラス</strong>」（パッケージ名：<code>com.creamworks.taximeter</code>、以下「本アプリ」）における
+  ユーザー情報の取り扱いについて、以下のとおりプライバシーポリシーを定めます。
+</p>
+
+<h2>1. 対象アプリ・開発者</h2>
+<ul>
+  <li>アプリ名：タクシーメーター　プラス</li>
+  <li>プラットフォーム：Android（Google Play）</li>
+  <li>パッケージ名：<code>com.creamworks.taximeter</code></li>
+  <li>デベロッパー名：山根 孝平</li>
+  <li>開発者名義 / ブランド名：CreamWorks</li>
+  <li>連絡先：<a href="mailto:cream.works.g01@gmail.com">cream.works.g01@gmail.com</a></li>
+</ul>
+<p>
+  本ポリシーは上記 Android アプリ専用です。他アプリの取り扱いについては
+  <a href="../">プライバシーポリシー一覧</a> をご確認ください。
+</p>
+
+<h2>2. 取得・利用する情報</h2>
+<p>本アプリおよび本アプリが利用する第三者 SDK が取り扱う可能性のある情報は、次のとおりです。</p>
+<ul>
+  <li>位置情報（GPS 等）：運賃シミュレーション機能のため</li>
+  <li>アプリの操作・利用状況：Firebase Analytics による品質改善・機能改善のため</li>
+  <li>広告識別子（AAID 等）および広告配信に関連する端末・ネットワーク情報：Google AdMob のため</li>
+  <li>購入・サブスクリプション関連情報：Google Play Billing による課金処理および購入状態の確認のため</li>
+  <li>アプリ設定・利用回数等：端末内での機能提供のため（開発者サーバーへ送信しません）</li>
+</ul>
+<p>
+  本アプリは、氏名・住所・電話番号・メールアドレス等のアカウント登録を求めず、
+  開発者がこれらを直接収集することはありません。
+</p>
+
+<h2>3. 位置情報</h2>
+<p>
+  本アプリは、走行距離・速度・経過時間に基づく運賃シミュレーションのため、
+  端末の位置情報（高精度 GPS を含む）を利用します。
+</p>
+<ul>
+  <li>利用目的：運賃計算など本アプリの主要機能の提供</li>
+  <li>取得方法：Google Play services の位置情報 API（Fused Location Provider）</li>
+  <li>権限：<code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code>（ユーザーの許可が必要）</li>
+  <li>バックグラウンド位置情報：本アプリは <code>ACCESS_BACKGROUND_LOCATION</code> を宣言しておらず、バックグラウンド位置情報の取得を目的とした実装ではありません</li>
+  <li>端末内での利用：取得した位置情報は、運賃計算のためにアプリ動作中に端末上で処理します</li>
+  <li>保存：走行軌跡・緯度経度履歴を開発者のサーバーや端末内データベースへ永続保存する実装はありません（料金設定や利用回数など、位置情報以外の設定データは端末内に保存します）</li>
+  <li>外部送信（アプリ独自）：Firebase Analytics の独自イベント／パラメータとして緯度・経度等の位置情報を送信する実装はありません</li>
+</ul>
+<p>
+  なお、広告配信（Google AdMob）に伴い、Google 側でおおよその位置情報が取り扱われる場合があります。
+  詳細は Google のプライバシーポリシーをご確認ください。
+</p>
+
+<h2>4. Firebase Analytics</h2>
+<p>
+  本アプリは、アプリの利用状況把握および機能改善のため、
+  Google が提供する Firebase Analytics を利用しています。
+</p>
+<p>アプリ実装上、開発者が送信している主なイベント例は次のとおりです。</p>
+<ul>
+  <li>標準イベント：<code>screen_view</code>、<code>app_open</code></li>
+  <li>メーター操作：<code>taxi_status_changed</code>、<code>meter_button_tap</code>、<code>meter_started</code>、<code>meter_completed</code>、<code>highway_toggled</code> 等</li>
+  <li>設定・テーマ：<code>settings_tap</code>、<code>theme_select</code> 等</li>
+  <li>広告関連：<code>interstitial_shown</code>、<code>settings_reward_started</code> 等</li>
+  <li>課金・ペイウォール：<code>paywall_viewed</code>、<code>purchase_started</code>、<code>purchase_completed</code>、<code>restore_completed</code> 等</li>
+  <li>ユーザープロパティ：<code>subscription_status</code></li>
+</ul>
+<p>
+  <code>meter_started</code> / <code>meter_completed</code> などで送信するパラメータは、
+  利用回数・プレミアム状態・走行時間や運賃の区分（バケット）などであり、
+  緯度・経度などの詳細な位置情報は含みません。
+</p>
+<p>
+  このほか、Firebase Analytics / Google の仕様に基づき、端末情報、アプリの利用情報、
+  広告識別子、IP アドレス等が Google により収集・処理される場合があります。
+  詳細は Google のプライバシーポリシーおよび Firebase のドキュメントをご確認ください。
+</p>
+
+<h2>5. 広告（Google AdMob）</h2>
+<p>
+  本アプリは Google AdMob（Google Mobile Ads SDK）を利用し、
+  バナー・インタースティシャル・リワード広告等を表示する場合があります。
+</p>
+<p>広告配信のため、Google は次のような情報を取得・利用する場合があります。</p>
+<ul>
+  <li>広告識別子（AAID 等）</li>
+  <li>端末情報（機種、OS、言語設定等）</li>
+  <li>IP アドレス等のネットワーク情報</li>
+  <li>広告の表示・クリック等の利用情報</li>
+  <li>おおよその位置情報（Google AdMob が取り扱う範囲）</li>
+</ul>
+<p>
+  本アプリは広告識別子利用のため <code>AD_ID</code> 権限を宣言しています。
+  パーソナライズ広告の制御は、端末の広告設定等から行えます。
+</p>
+
+<h2>6. 課金情報（Google Play Billing）</h2>
+<p>
+  本アプリは Google Play の課金システム（Play Billing Library）を利用し、
+  サブスクリプション等のアプリ内購入を提供します。
+</p>
+<ul>
+  <li>購入処理・購入履歴の管理は Google Play 側で行われます</li>
+  <li>開発者は、購入状態（プレミアム有効可否等）をアプリ機能提供のために確認します</li>
+  <li>クレジットカード番号等の決済情報を開発者が直接取得・保存することはありません</li>
+  <li>購入関連の分析イベントを Firebase Analytics に送信する場合があります（商品 ID、プラン種別、価格・通貨、成否等）</li>
+</ul>
+
+<h2>7. 第三者サービスへの情報提供</h2>
+<p>本アプリは次の第三者サービスを利用します。</p>
+<ul>
+  <li>Google（Firebase Analytics、Google AdMob、Google Play Billing、位置情報サービス等）</li>
+</ul>
+<p>
+  これらのサービスにおける情報の取り扱いは、各事業者のポリシーに従います。
+</p>
+<ul>
+  <li>
+    Google プライバシーポリシー：<br>
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+  </li>
+  <li>
+    Google 広告に関する情報：<br>
+    <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a>
+  </li>
+</ul>
+
+<h2>8. データの保存・保持</h2>
+<ul>
+  <li>端末内（DataStore）：料金設定、テーマ設定等</li>
+  <li>端末内（SharedPreferences）：利用回数、レビュー関連の状態等</li>
+  <li>Firebase Analytics / AdMob / Google Play：各サービス側の保持期間・管理に従います</li>
+</ul>
+<p>
+  開発者が独自に運営するサーバーへ、ユーザーの個人情報や位置情報履歴をアップロードする実装はありません。
+</p>
+
+<h2>9. データの削除</h2>
+<p>
+  端末内に保存された設定・利用回数等は、本アプリの削除または OS のアプリデータ削除により消去できます。
+  Google アカウントや広告識別子に紐づくデータについては、Google の提供する設定・手続きに従ってください。
+</p>
+
+<h2>10. セキュリティ</h2>
+<p>
+  開発者は、取り扱う情報が不正アクセス等から保護されるよう、一般的な適切な措置に努めます。
+  ただし、インターネット通信や端末環境の性質上、絶対的な安全を保証するものではありません。
+</p>
+
+<h2>11. 子どものプライバシー</h2>
+<p>
+  本アプリは、子どもから意図的に個人情報を収集することを目的としていません。
+  保護者の方で、お子さまに関する情報提供があったと思われる場合は、下記までご連絡ください。
+</p>
+
+<h2>12. プライバシーポリシーの変更</h2>
+<p>
+  本ポリシーは、法令やサービス内容の変更等に応じて改定されることがあります。
+  重要な変更がある場合は、本ページの更新等によりお知らせします。
+</p>
+
+<h2>13. お問い合わせ</h2>
+<p>
+  本ポリシーに関するお問い合わせ：<br>
+  デベロッパー：山根 孝平（CreamWorks）<br>
+  メール：<a href="mailto:cream.works.g01@gmail.com">cream.works.g01@gmail.com</a>
+</p>
+
+<hr>
+
+<h2>（参考）Google Play Data safety 申告の目安</h2>
+<p>
+  以下は、本アプリの実装調査に基づく申告の目安です。Play Console の最終申告は、
+  審査時点の実装・SDK 仕様・Console の選択肢に合わせて確認してください。
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>区分</th>
+      <th>収集</th>
+      <th>共有</th>
+      <th>備考</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Location（おおまかな位置 / 正確な位置）</td>
+      <td>する（アプリ機能）</td>
+      <td>アプリ独自送信は確認できず。AdMob 経由のおおまかな位置は要確認</td>
+      <td>必須（機能提供）。バックグラウンド位置は未宣言</td>
+    </tr>
+    <tr>
+      <td>App activity / App interactions</td>
+      <td>する（Firebase Analytics）</td>
+      <td>する（Google）</td>
+      <td>画面・操作・課金フロー等</td>
+    </tr>
+    <tr>
+      <td>App info and performance / Diagnostics</td>
+      <td>Crashlytics は未導入。Analytics 経由の診断的データは要確認</td>
+      <td>要確認</td>
+      <td>Crashlytics 依存なし</td>
+    </tr>
+    <tr>
+      <td>Device or other IDs</td>
+      <td>する（AD_ID 等、SDK 経由の可能性）</td>
+      <td>する（Google Ads / Analytics）</td>
+      <td><code>AD_ID</code> 権限あり</td>
+    </tr>
+    <tr>
+      <td>Purchase history</td>
+      <td>する（Play Billing / Analytics）</td>
+      <td>Google Play および Analytics 経由で処理</td>
+      <td>決済情報自体は Google 管理</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="../">← プライバシーポリシー一覧に戻る</a></p>
+
+</body>
+</html>
